@@ -1,0 +1,39 @@
+User Story 1: User Profile Creation
+
+As a new user, I want to create a profile by providing my username, email, and password so that I can receive personalized music recommendations.
+Acceptance Criteria:
+The registration form includes fields for username, email, and password.
+After successful registration, I can log in with my credentials.
+User Story 2: Discover Recommended Songs
+
+As a registered user, I want to see a list of recommended songs on my homepage based on my music preferences and listening history.
+Acceptance Criteria:
+Upon logging in, I can access a personalized homepage.
+The homepage displays a list of recommended songs, including title, artist, and cover art.
+Recommendations consider my liked songs and listening history.
+User Story 3: Like and Save Songs
+
+As a user, I want to be able to 'like' songs I enjoy and save them to my liked songs collection for future listening.
+Acceptance Criteria:
+While listening to a song, I have the option to 'like' it.
+Liked songs are added to my 'Liked Songs' collection.
+I can view and manage my 'Liked Songs' collection from my profile.
+User Story 4: User Feedback and Ratings
+
+As a user, I want to provide feedback on recommended songs by rating them and leaving comments to help improve future recommendations.
+Acceptance Criteria:
+On the song details page, I can rate a recommended song (e.g., 1 to 5 stars).
+I can also leave comments or feedback on the song.
+User feedback is considered to enhance the recommendation algorithm.
+User Story 5: Create and Manage Playlists
+
+As a user, I want to create personalized playlists by adding songs from my 'Liked Songs' collection and manage these playlists.
+Acceptance Criteria:
+I can create new playlists, providing a name and optional description.
+I can add songs to my playlists from my 'Liked Songs' collection.
+I can edit and delete playlists as needed.
+These user stories cover essential functionalities for your music recommendation MVP, including user registration, personalized recommendations, song interactions (liking and rating), and playlist management. You can use these stories as a starting point and further refine them based on your specific project's needs and priorities.
+
+
+
+
