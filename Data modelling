@@ -1,0 +1,71 @@
+       +------------------+
+       |     Users        |
+       +------------------+
+       | id (PK)          |
+       | username         |
+       | email            |
+       | password         |
+       | ...              |
+       +------------------+
+             |
+             |
+             v
+       +------------------+
+       |     LikedSongs   |
+       +------------------+
+       | id (PK)          |
+       | user_id (FK)     |
+       | song_id (FK)     |
+       | liked_at         |
+       +------------------+
+             |
+             |
+             v
+       +------------------+
+       |     Songs        |
+       +------------------+
+       | id (PK)          |
+       | title            |
+       | artist           |
+       | genre            |
+       | tempo            |
+       | danceability     |
+       | energy           |
+       | ...              |
+       +------------------+
+             |      |
+             |      |
+             |      |
+             v      v
+       +------------------+
+       |   Feedback       |
+       +------------------+
+       | id (PK)          |
+       | user_id (FK)     |
+       | song_id (FK)     |
+       | rating           |
+       | comment          |
+       | feedback_at      |
+       +------------------+
+             |
+             |
+             v
+       +------------------+
+       |   Playlists      |
+       +------------------+
+       | id (PK)          |
+       | user_id (FK)     |
+       | name             |
+       | description      |
+       +------------------+
+             |
+             |
+             v
+       +------------------+
+       | PlaylistSongs    |
+       +------------------+
+       | id (PK)          |
+       | playlist_id (FK) |
+       | song_id (FK)     |
+       | position         |
+       +------------------+
