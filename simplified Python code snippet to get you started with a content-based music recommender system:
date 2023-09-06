@@ -1,0 +1,20 @@
+import pandas as pd
+from sklearn.metrics.pairwise import cosine_similarity
+
+# Load your dataset
+data = pd.read_csv('music_data.csv')
+
+# User's liked songs (you can replace these with actual data)
+liked_songs = ["Song1", "Song2", "Song3"]
+
+# Filter the dataset to include only the liked songs
+liked_songs_data = data[data['Song Title'].isin(liked_songs)]
+
+# Calculate cosine similarity between liked songs and all other songs
+similarities = cosine_similarity(liked_songs_data.drop(['Song Title'], axis=1), data.drop(['Song Title'], axis=1))
+
+# Get recommended songs based on similarity scores
+recommended_songs = data.iloc[similarities.argmax(axis=1)]
+
+# Display recommended songs to the user
+print(recommended_songs)
